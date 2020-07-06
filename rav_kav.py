@@ -1,8 +1,16 @@
+"""
+Manage a Rav-Kav card and execute different tasks on it.
+"""
+
+
+from typing import Tuple
+
+
 def add_money(account_balance: float) -> float:
     """
-        Add money to the current balance and print the status
-        :param account_balance: The user's account balance.
-        :return: The user's account balance.
+    Add money to the current balance and print the status
+    :param account_balance: The user's account balance.
+    :return: The user's account balance.
     """
     print("Please enter the amount of money you want to add to the card:",
           end=" ")
@@ -13,12 +21,13 @@ def add_money(account_balance: float) -> float:
     return account_balance
 
 
-def spend_money(account_balance: float, sum_of_expenses: float) -> [float, float]:
+def spend_money(account_balance: float, sum_of_expenses: float) -> Tuple[float,
+                                                                         float]:
     """
-        Spend money from the current balance and print the status
-        :param account_balance: The user's account balance.
-        :param sum_of_expenses: The user's current sum of expenses.
-        :return: The user's account balance and sum of expenses.
+    Spend money from the current balance and print the status
+    :param account_balance: The user's account balance.
+    :param sum_of_expenses: The user's current sum of expenses.
+    :return: The user's account balance and sum of expenses.
     """
     print("Please enter the amount of money you want to spend:", end=" ")
     money_amount = float(input())

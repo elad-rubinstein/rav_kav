@@ -1,3 +1,8 @@
+"""
+Manage a Rav-Kav card and execute different tasks on it.
+"""
+
+
 from dataclasses import dataclass
 
 
@@ -6,7 +11,7 @@ class Rav_kav:
     money_spent: float = 0
     balance: float = 0
 
-    def add_money(self, money: int) -> None:
+    def add_money(self, money: float) -> None:
         """
         Add money to the current balance and print the status
         :param money: The amount of money to be added.
@@ -17,8 +22,8 @@ class Rav_kav:
 
     def spend_money(self, money: float) -> None:
         """
-            Spend money from the current balance and print the status
-            :param money: The amount of money to be spent.
+        Spend money from the current balance and print the status
+        :param money: The amount of money to be spent.
         """
         self.balance -= money
         self.money_spent += money
@@ -50,7 +55,7 @@ def main():
             print(f"30 days passed, your account balance is now"
                   f" {card1.balance}$!")
             count = 1
-        count += 1
+        count += 1      
 
 
 if __name__ == '__main__':
