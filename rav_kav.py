@@ -7,6 +7,7 @@ from typing import Tuple
 
 
 def add_money(account_balance: float) -> float:
+
     """
     Add money to the current balance and print the status
     :param account_balance: The user's account balance.
@@ -23,6 +24,7 @@ def add_money(account_balance: float) -> float:
 
 def spend_money(account_balance: float, sum_of_expenses: float) -> Tuple[float,
                                                                          float]:
+
     """
     Spend money from the current balance and print the status
     :param account_balance: The user's account balance.
@@ -39,6 +41,7 @@ def spend_money(account_balance: float, sum_of_expenses: float) -> Tuple[float,
 
 
 def main():
+
     """
     Execute a loop in which every time the user should choose a task to perform
     """

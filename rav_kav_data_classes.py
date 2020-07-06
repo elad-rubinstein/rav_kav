@@ -12,6 +12,7 @@ class Rav_kav:
     balance: float = 0
 
     def add_money(self, money: float) -> None:
+
         """
         Add money to the current balance and print the status
         :param money: The amount of money to be added.
@@ -21,6 +22,7 @@ class Rav_kav:
         print(f"your account balance is now {self.balance}$")
 
     def spend_money(self, money: float) -> None:
+
         """
         Spend money from the current balance and print the status
         :param money: The amount of money to be spent.
@@ -32,6 +34,7 @@ class Rav_kav:
 
 
 def main():
+
     """
     Execute a loop in which every time the user should choose a task to perform
    """
